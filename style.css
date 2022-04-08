@@ -1,0 +1,40 @@
+
+  @font-face {
+    font-family: 'Neue Montreal';
+    src: url('Neue Montreal/NeueMontreal-Bold.woff') format('truetype');
+    font-weight: 100;
+ }
+
+html, body {
+    
+    padding: 0;
+    margin: 0;
+   font-family: 'Neue Montreal';
+  }
+
+  
+  #wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  
+  #leftmenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    
+  }
+  
+  #maincontent {
+    float: right;
+    left: 30%;
+    width: 70%;
+    height: 100%;
+    
+  }
+  
