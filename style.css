@@ -7,7 +7,7 @@
 
 html, body {
     
-    padding: 0;
+   
     margin: 0;
    font-family: 'Neue Montreal';
   }
@@ -17,6 +17,7 @@ html, body {
 
   .page2 {
     margin: 0;
+   
     overflow: hidden;
     height:100%;
   }
@@ -36,7 +37,7 @@ html, body {
       top: 0px;
       bottom: 0;
       left: 15%;
-      width: 30%;
+      width: 20%;
       overflow-y: scroll; 
     }
     
@@ -46,8 +47,8 @@ html, body {
       bottom: 0;
       right: 0;
       overflow-y: scroll;
-      left: 45%;
-      width: 55%;
+      left: 35%;
+      width: 65%;
     }
   }
   
@@ -60,7 +61,7 @@ html, body {
   
   #middle{
     height:100%;
-    width: 30%;
+    width: 20%;
     display: inline-block;
   }
   
@@ -79,6 +80,7 @@ html, body {
     padding: 1rem;
     padding-left: 5rem;
     padding-right: 5rem;
+   
     
   }
   .column{
