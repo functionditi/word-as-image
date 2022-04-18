@@ -2,7 +2,7 @@
   @font-face {
     font-family: 'Neue Montreal';
     src: url('Neue Montreal/NeueMontreal-Bold.woff') format('truetype');
-    font-weight: 100;
+    
  }
 
 html, body {
@@ -10,7 +10,7 @@ html, body {
    
     margin: 0;
    font-family: 'Neue Montreal';
-  
+  height: 100vh;
   }
 
   h1{
@@ -23,7 +23,18 @@ html, body {
     overflow: hidden;
     height:100%;
   }
+
+  p{
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 15px;
+  }
   
+  h2{
+    padding: 0%;
+    margin: 0%;
+    
+  }
   
   
   
@@ -74,7 +85,7 @@ html, body {
   }
 
   #container-mainpage{
-    grid-template-rows:  repeat(6, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
   }
 
   .griditem{
