@@ -18,7 +18,7 @@ let visuals = []
 
 function setup() {
   createCanvas(windowHeight*0.95, windowHeight*0.95);
- background(255);
+ background(0);
   video = createCapture(VIDEO);
   video.size(width, height);
   rectMode(CENTER);
@@ -94,7 +94,7 @@ function drawKeypoints()  {
        
         
          if (-keypoint.position.x+width>=i && -keypoint.position.x+width<i+w && keypoint.position.y>=j && keypoint.position.y<j+h){
-        fill(0);
+        fill(255);
         circ=0;
       }
         else{
