@@ -1,7 +1,7 @@
 
   @font-face {
     font-family: 'Neue Montreal';
-    src: url('Neue Montreal/NeueMontreal-Bold.woff') format('truetype');
+    src: url('Neue Montreal/NeueMontreal-Regular.woff') format('truetype');
     font-weight: 100;
  }
 
@@ -10,10 +10,12 @@ html, body {
    
     margin: 0;
    font-family: 'Neue Montreal';
+  
   }
 
-  
-  
+  h1{
+    font-size: 5rem;
+  }
 
   .page2 {
     margin: 0;
@@ -22,54 +24,57 @@ html, body {
     height:100%;
   }
   
-  @media (min-width: 768px){
-    #left {
+  #left-1{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+   
+  }
+
+  #right-1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    left: 50%;
+    width: 50%;
+  }
+
+
+    #left-2 {
       position: absolute;
       top: 0px;
       bottom: 0;
       left: 0;
       width: 15%;
+      padding-left: 2rem;
       /* overflow-y: scroll;  */
+     
     }
   
-    #middle {
+    #middle-2 {
       position: absolute;
       top: 0px;
       bottom: 0;
       left: 15%;
-      width: 20%;
+      width: 15%;
       overflow-y: scroll; 
+     
     }
     
-    #right {
+    #right-2 {
       position: absolute;
       top: 0;
       bottom: 0;
       right: 0;
       overflow-y: scroll;
-      left: 35%;
-      width: 65%;
+      left: 30%;
+      width: 70%;
     }
-  }
   
-  #left {
-    
- 
-    height:100%;
-    
-  }
-  
-  #middle{
-    height:100%;
-    width: 20%;
-    display: inline-block;
-  }
-  
-  #right {
-    height:100%;
-    
-    padding: 1rem;
-  }
   
 
   .row{
@@ -98,3 +103,33 @@ html, body {
     display:inline-flex;
   
   }
+  iframe{
+ 
+    width: 100%;
+    height: 100%;
+    display:inline-flex;
+  border-style: none ;
+  }
+
+  .container{
+    
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows:  repeat(6, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 20px;
+  }
+
+  .griditem{
+     border: 4px;
+    
+  }
+
+  #p5sketch{
+    grid-column-start: 4;
+  grid-column-end: span 2;
+   
+  }
+  
