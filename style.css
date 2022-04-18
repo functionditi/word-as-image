@@ -14,7 +14,10 @@ html, body {
   }
 
   h1{
-    font-size: 5rem;
+    font-size: 2rem;
+    padding: 0%;
+    margin: 0%;
+    line-height:2rem;
   }
 
   .page2 {
@@ -108,6 +111,13 @@ html, body {
   }
 
   a{
-    color: black;
+    color: #0000ff;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #00ff00;
+  }
 
+  .callout{
+    color: #ff0000;
   }
