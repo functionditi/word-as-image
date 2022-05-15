@@ -17,8 +17,8 @@ let visuals = []
 
 
 function setup() {
-  createCanvas(windowHeight*0.95, windowHeight*0.95);
- background(0);
+  createCanvas(windowWidth, windowHeight);
+   //background(255);
   video = createCapture(VIDEO);
   video.size(width, height);
   rectMode(CENTER);
@@ -90,10 +90,15 @@ function drawKeypoints()  {
       push();
      let circ;
       if (matchPoints.indexOf(keypoint.part)>-1 && keypoint.score > 0.3) {
-        
-       
-        
-         if (-keypoint.position.x+width>=i && -keypoint.position.x+width<i+w && keypoint.position.y>=j && keypoint.position.y<j+h){
+  
+      //    if (-keypoint.position.x+width>=i && -keypoint.position.x+width<i+w && keypoint.position.y>=j && keypoint.position.y<j+h){
+      //   fill(255);
+      //   circ=0;
+      // }
+      //   else{
+      //     circ=1;
+
+      if (mouseX>=i && mouseX<i+w && mouseY>=j && mouseY<j+h){
         fill(255);
         circ=0;
       }
