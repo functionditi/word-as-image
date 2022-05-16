@@ -14,8 +14,8 @@
 </head>
 
   <body style="background-color:black">
-    <div id="container-homepage">
-          
+    <div id="container-homepage" >
+    
       <div id="mSlot"></div>
       <div id="oSlot"></div>    
       <div id="dSlot"></div>
@@ -23,13 +23,14 @@
       <div id="lSlot"></div>
       <div id="aSlot"></div>
       <div id="rSlot"></div>
-      <div>  <a href="./index.html">more.</a></div>
+       <!-- <a href="./index.html" style="color: white;">see more.</a> -->
+       <button onclick="location.href='./index.html'"></button>
       <div id="tSlot"></div>
       <div id="ySlot"></div>
       <div id="pSlot"></div>
       <div id="eSlot"></div>
       <div></div>
-      <div></div>
+      
       <div id="r1Slot"></div>
       <div id="e1Slot"></div>
       <div id="p1Slot"></div>
@@ -41,14 +42,6 @@
       <div id="r2Slot"></div>
       <div id="y1Slot"></div>
 
-      
-      
-
-     
-           
-         
-          
-          
 
 
           
@@ -58,9 +51,9 @@
     <script>
       
 
-      setInterval(() => {
-        let imageIndex=1+Math.floor(Math.random()*6);
-        let imageIndex_1=1+Math.floor(Math.random()*6);
+      // setInterval(() => {
+       
+        
         
       const m1=document.querySelector("#mSlot");
       const o1=document.querySelector("#oSlot");
@@ -85,15 +78,13 @@
       const y2=document.querySelector("#y1Slot");
 
 
-      
-      m1.innerHTML=`
+      setInterval(() => {
+        let imageIndex=1+Math.floor(Math.random()*6);
+        m1.innerHTML=`
       <img src="./assets/m/M${imageIndex}.png">
       `;
       o1.innerHTML=`
       <img src="./assets/o/o${imageIndex}.png">
-      `;
-      d1.innerHTML=`
-      <img src="./assets/d/d${imageIndex}.png">
       `;
       u1.innerHTML=`
       <img src="./assets/u/u${imageIndex}.png">
@@ -116,6 +107,40 @@
       p1.innerHTML=`
       <img src="./assets/p/p${imageIndex}.png">
       `;
+   
+      o2.innerHTML=`
+      <img src="./assets/o/o${imageIndex}.png">
+      `;
+
+      s1.innerHTML=`
+      <img src="./assets/s/s${imageIndex}.png">
+      `;
+      i1.innerHTML=`
+      <img src="./assets/i/i${imageIndex}.png">
+      `;
+    
+      o3.innerHTML=`
+      <img src="./assets/o/o${imageIndex}.png">
+      `;
+     
+      }, 1000);
+      
+
+      setInterval(() => {
+        let imageIndex_1=1+Math.floor(Math.random()*6);
+        d1.innerHTML=`
+      <img src="./assets/d/d${imageIndex_1}.png">
+      `;
+     
+        t2.innerHTML=`
+      <img src="./assets/t/t${imageIndex_1}.png">
+      `;
+        r3.innerHTML=`
+      <img src="./assets/r/r${imageIndex_1}.png">
+      `;
+      y2.innerHTML=`
+      <img src="./assets/y/Y${imageIndex_1}.png">
+      `;
       e1.innerHTML=`
       <img src="./assets/e/e${imageIndex_1}.png">
       `;
@@ -127,28 +152,6 @@
       `;
       p2.innerHTML=`
       <img src="./assets/p/p${imageIndex_1}.png">
-      `;
-      o2.innerHTML=`
-      <img src="./assets/o/o${imageIndex}.png">
-      `;
-
-      s1.innerHTML=`
-      <img src="./assets/s/s${imageIndex}.png">
-      `;
-      i1.innerHTML=`
-      <img src="./assets/i/i${imageIndex}.png">
-      `;
-      t2.innerHTML=`
-      <img src="./assets/t/t${imageIndex_1}.png">
-      `;
-      o3.innerHTML=`
-      <img src="./assets/o/o${imageIndex}.png">
-      `;
-      r3.innerHTML=`
-      <img src="./assets/r/r${imageIndex_1}.png">
-      `;
-      y2.innerHTML=`
-      <img src="./assets/y/Y${imageIndex_1}.png">
       `;
       }, 100);
 
