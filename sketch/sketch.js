@@ -93,19 +93,19 @@ function drawKeypoints()  {
      let circ;
       if (matchPoints.indexOf(keypoint.part)>-1 && keypoint.score > 0.3) {
   
-      //    if (-keypoint.position.x+width>=i && -keypoint.position.x+width<i+w && keypoint.position.y>=j && keypoint.position.y<j+h){
-      //   fill(255);
-      //   circ=0;
-      // }
-      //   else{
-      //     circ=1;
-
-      if (mouseX>=i && mouseX<i+w && mouseY>=j && mouseY<j+h){
+         if (-keypoint.position.x+width>=i && -keypoint.position.x+width<i+w && keypoint.position.y>=j && keypoint.position.y<j+h){
         fill(255);
         circ=0;
       }
         else{
           circ=1;
+
+      // if (mouseX>=i && mouseX<i+w && mouseY>=j && mouseY<j+h){
+      //   fill(255);
+      //   circ=0;
+      // }
+      //   else{
+      //     circ=1;
     noStroke();
     noFill();
         }
