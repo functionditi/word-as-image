@@ -68,24 +68,24 @@ base('word-as-image').select({
                 var str = recordLetter;
         var n = str.charCodeAt(0) - 65 +1;
 
-            //     var strNext=recordLetterNext;
-            //     var m = strNext.charCodeAt(0) - 65 +1;
+                var strNext=recordLetterNext;
+                var m = strNext.charCodeAt(0) - 65 +1;
 
-            //     if (n!=m){
-            //         nIndex=0;
-            //         lIndex++;
-            //     }
-            //     nIndex++;
-            //    // console.log( lIndex, nIndex, str);
+                if (n!=m){
+                    nIndex=0;
+                    lIndex++;
+                }
+                nIndex++;
+               // console.log( lIndex, nIndex, str);
 
-            //     letterArray.push(
-            //         {
-            //             letterIndex: lIndex,
-            //             iteration: nIndex,
-            //             alphabet: str,
-            //             alphabetURL: recordImage[0].thumbnails.large.url
-            //         }
-            //     )
+                letterArray.push(
+                    {
+                        letterIndex: lIndex,
+                        iteration: nIndex,
+                        alphabet: str,
+                        alphabetURL: recordImage[0].thumbnails.large.url
+                    }
+                )
 
             outputContainer.innerHTML+=`
             <div class="gridsubitem">
@@ -129,7 +129,7 @@ base('word-as-image').select({
     // If there are more records, `page` will get called again.
     // If there are no more records, `done` will get called.
     fetchNextPage();
-   // console.log(letterArray)
+   console.log(letterArray)
 
 }, function done(err) {
     if (err) { console.error(err); return; }
