@@ -19,22 +19,42 @@
 
 
       
-        <h1>
-          Modular Type Repository
-        </h1>
+      <h1>
+        <a href="./home.html" style="color:black">Modular Type Repository</a>
+      </h1>
         <!-- <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
 
       <div id="display-image"></div> -->
-       <p><a href="./index.html">Go back.</a> This is a repository of all the crowd-sourced letters collected so far, with the contributors consisting of <span style="color:#ff0000">7</span> people.</p>
- 
+      <div>
+        <p><a href="./index.html">Go back.</a> This is a repository of all the crowd-sourced letters collected so far, with the contributors consisting of <span style="color:#ff0000">7</span> people.</p>
+        <!-- <div class="slidecontainer">
+          <input type="range" min="1" max="9" value="3" class="slider" id="myRange">
+          <p>Value: <span id="demo"></span></p>
+        </div> -->
+      </div>
+       
   
-      <div class="gridgallery" id="gridgallery" style=" background-color:black;">
+      <div class="gridgallery" id="gridgallery" style="grid-template-columns:  repeat(9, 1fr); background-color:black;">
     </div>
 
   </main>
   <script data-main="./airtableconnect.js" src="./airtableconnect.js" ></script>
+  <script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+var outputGallery=document.getElementById("gridgallery");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  outputGallery.style.columnCount=this.value;
+}
+  </script>
 
   <!-- <script src="./require.js"></script> -->
   </body>
-            
+           
+  
+
+  
       
