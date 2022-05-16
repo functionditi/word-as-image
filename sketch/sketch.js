@@ -18,6 +18,8 @@ let visuals = []
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  var dataURL = canvas.toDataURL();
+console.log(dataURL);
    //background(255);
   video = createCapture(VIDEO);
   video.size(width, height);

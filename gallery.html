@@ -13,7 +13,7 @@
     <script src="./lib/airtable.browser.js"></script>
 </head>
 
-  <body>
+  <body >
     <main>
     <div id="container-gallery" >
 
@@ -22,14 +22,36 @@
         <h1>
           Modular Type Repository
         </h1>
-       <p><a href="./index.html">Go back.</a> This is a repository of all the crowd-sourced letters collected so far, with the contributors consisting of <span style="color:#ff0000">4</span> people.</p>
+        <!-- <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+
+      <div id="display-image"></div> -->
+       <p><a href="./index.html">Go back.</a> This is a repository of all the crowd-sourced letters collected so far, with the contributors consisting of <span style="color:#ff0000">7</span> people.</p>
  
   
-      <div id="gridgallery">
+      <div class="gridgallery" id="gridgallery" style=" background-color:black;">
     </div>
 
   </main>
   <script data-main="./airtableconnect.js" src="./airtableconnect.js" ></script>
+
+  <script>
+    const image_input = document.querySelector("#image-input");
+
+image_input.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+
+
+
+
+
+
+  </script>
   <!-- <script src="./require.js"></script> -->
   </body>
             
