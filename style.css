@@ -3,7 +3,7 @@
     font-family: 'Neue Montreal';
     font-weight: bold;
     src: url('Neue Montreal/NeueMontreal-Bold.woff') format('truetype');
-    
+     
  }
 
 
@@ -24,6 +24,12 @@ html, body {
     line-height:2rem;
   
   }
+
+  h1:hover{
+    color: #00ff00;
+  }
+
+
 
   .page2 {
     margin: 0;
@@ -168,6 +174,10 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2, fr);
     grid-template-rows: repeat(1, fr);
+  }
+
+  button:hover{
+    background-color: #00ff00;
   }
 
 
